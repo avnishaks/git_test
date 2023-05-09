@@ -1,29 +1,18 @@
-import './App.css';
-
-let app='App'
-let app_header='App-header'
-
+import Video from './component/Video'
 function App() {
-  console.log('constructing App Application')
   return (
-    <div className={app}>
-      <header className={app_header}>
-        App Application
-        <Demo></Demo>
-      </header>
+    <div className="App">
+      <div>Videos</div>
+      <Video title="Node JS tutorial" channel="Avnish" views="100K" time="1 month ago"></Video>
+      <Video
+        title="Mongo DB tutorial"
+        channel="AKS"
+        views="1M"
+        time="1 month ago"
+      ></Video>
     </div>
-  );
-}
 
-function Demo() {
-  console.log('constructing Demo Application');
-  return (
-    <div className={app}>
-      <header className={app_header}>
-         Demo Application
-      </header>
-    </div>
-  );
+  )
 }
 
 export default App;
