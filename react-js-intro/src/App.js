@@ -1,15 +1,21 @@
 import Video from './component/Video'
+import videos from './data/data'
+import './App.css'
 function App() {
   return (
     <div className="App">
       <div>Videos</div>
-      <Video title="Node JS tutorial" channel="Avnish" views="100K" time="1 month ago"></Video>
-      <Video
-        title="Mongo DB tutorial"
-        channel="AKS"
-        views="1M"
-        time="1 month ago"
-      ></Video>
+      {
+        videos.map(x=><Video
+          title={x.title}
+          views={x.views}
+          time={x.time}
+          channel={x.channel}
+          verify={x.verify}
+          prize={x.prize}
+
+        ></Video>)
+      }
     </div>
 
   )

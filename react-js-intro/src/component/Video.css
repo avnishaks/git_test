@@ -16,13 +16,13 @@
 .title {
     font-weight: bold;
     margin-bottom: 1em;
-    color: black;
+    color: red;
 }
 
 .channel,
 .views {
     font-size: small;
-    color: red;
+    color: white;
     margin-bottom: 0.2em;
 }
 
